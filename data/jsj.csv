@@ -1,0 +1,4 @@
+id,bedrooms,bathrooms,sqft_living,sqft_lot,floors,waterfront,view,condition,grade,sqft_above,sqft_basement,yr_built,yr_renovated,zipcode,lat,long,sqft_living15,sqft_lot15,date,price,above_mean_price,sqft_living_price,sqft_lot_price,sqft_living15_price,sqft_lot15_price,central_area,capitol_hill,fremont,queen_anne
+9828700200,4,3.0,2170,4000,2.0,False,0,4,9,1610,560,1982,2011,98112,47.6196,-122.292,1670,4000,2014-05-05,831000.0,True,382.94930875576034,207.75,497.6047904191617,207.75,True,True,False,False
+4003000053,3,2.75,2250,9600,2.5,False,0,4,9,1830,420,1909,1991,98122,47.6033,-122.287,2060,4980,2014-08-13,765000.0,True,340.0,79.6875,371.3592233009709,153.6144578313253,True,True,False,False
+1952200220,3,2.5,2290,2798,3.0,False,0,4,9,2290,0,1953,1983,98102,47.641,-122.315,2260,5000,2014-06-03,660000.0,True,288.2096069868996,235.88277340957828,292.0353982300885,132.0,True,True,False,False
