@@ -1,56 +1,29 @@
-# ds-project-template
+# Exploratory Data Analysis
 
-Template for creating ds simple projects
+## Description
+This exploratory data analysis seeks to find recommendations for a house buyer, who is looking for two houses - one in the city and one in the countryside. 
 
-## Requirements
+## Data Sources
+- House sales in King County (Year 2014 - 2015)
 
-- pyenv
-- python==3.11.3
+## Methodology
+First, I used box plots and histograms to determine the distribution of numerical values and to find outliers. Outliers for price, sqft_living and sqft_lot were removed in order to obtain a better visualization of distribution on mapbox.
 
-## Setup
+## Results
+Key findings:
+- Houses above the mean price in King County are concentrated in the Northern parts of King County.
+- The highest concentration of expensive houses can be found in Bellevue.
+- House prices in our central locations (Capitol Hill, Queen Anne & Fremont) are on average 37% higher than non-central areas.
+- In the three central neighborhoods - the average house price and price per square feet is highest in Queen Anne.
+- Average grade is highest in Capitol Hill and Fremont has a lower avg. grade than the overall avg. for all houses. 
+- Prices for country homes are higher the more north we go and the closer we go to the city. 
+- Lot sizes seem to get bigger the further we get away from the city or the more remote the area is. 
+- House prices for country homes are on average lower during the winter season and this highest during spring.
 
-One of the first steps when starting any data science project is to create a virtual environment. For this project you have to create this environment from scratch yourself. However, you should be already familiar with the commands you will need to do so. The general workflow consists of... 
+## Dependencies
+- Python
+- Libraries: Pandas, matplotlib, Plotly, Seaborn
 
-* setting the python version locally to 3.11.3
-* creating a virtual environment using the `venv` module
-* activating your newly created environment 
-* upgrading `pip` (This step is not absolutely necessary, but will save you trouble when installing some packages.)
-* installing the required packages via `pip`
+## Author
+- Jonas Mortensen
 
-At the end, you want to make sure that people who are interested in your project can create an identical environment on their own computer in order to be able to run your code without running into errors. Therefore you can create a `requirements file` and add it to your repository. You can create such a file by running the following command: 
-
-```bash
-pip freeze > requirements.txt
-```
-
-*Note: In rare case such a requirements file created with `pip freeze` might not ensure that another (especially M1 chip) user can install and execute it properly. This can happen if libraries need to be compiled (e.g. SciPy). Then it also depends on environment variables and the actual system libraries.*
-
-### Unit testing (Optional)
-
-If you write python scripts for your data processing methods, you can also write unit tests. In order to run the tests execute in terminal:
-
-```bash
-pytest
-```
-
-This command will execute all the functions in your project that start with the word **test**.
-
-
-### Environment
-
-This repo contains a requirements.txt file with a list of all the packages and dependencies you will need. Before you install the virtual environment, make sure to install postgresql if you haven't done it before.
-
-```bash
-brew update
-brew install postgresql@14
-```
-
-In order to install the environment you can use the following commands:
-
-```
-pyenv local 3.11.3
-python -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
-```
